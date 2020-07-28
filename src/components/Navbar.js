@@ -8,7 +8,7 @@ const useStyles = makeStyles(theme => ({
     menuSliderContainer: {
         width: 250,
         background: "#511",
-        height: "30rem"
+        height: "100%"
     },
     avatar: {
         display: "block",
@@ -42,12 +42,7 @@ const menuItems = [
 
 const Navbar = () => {
     // states
-    const [state, setState] = useState({
-        right: false
-    })
-    const toggleSlider = (open) => () => {
-        setState({right: open})
-    }
+    const [state, setState] = useState(false)
 
     const classes = useStyles()
 
@@ -74,12 +69,12 @@ const Navbar = () => {
             <Box component="nav">
                 <AppBar position="static" style={{ background: "#222" }}>
                     <Toolbar>
-                        <IconButton onClick={toggleSlider(true)}>
+                        <IconButton onClick={() => setState(true)} >
                             <ArrowBack style={{ color: "tomato" }} />
                         </IconButton>
 
                         <Typography variant="h5" style={{ color: "tan" }}>Portfolio</Typography>
-                        <Drawer anchor="right" open={state.right}>
+                        <Drawer anchor="right" open={state} onClose={() => setState(false)}>
                             {sideList()}
                         </Drawer>
                     </Toolbar>
