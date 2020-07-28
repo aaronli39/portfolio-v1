@@ -53,7 +53,7 @@ const Navbar = () => {
 
     const sideList = () => (
         <Box component="div" className={classes.menuSliderContainer}>
-            <Avatar className={classes.avatar} src={avatar} alt="Xiaojie Li" />
+            <Avatar className={classes.avatar} src={avatar} alt="Xiaojie Li's Avatar" />
             <Divider />
             <List disablePadding>
                 {menuItems.map((lsItem, ind) => (
