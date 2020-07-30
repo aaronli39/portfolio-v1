@@ -24,6 +24,11 @@ const useStyles = makeStyles(theme => ({
         transform: "translate(-50%, -50%)",
         width: "100vw",
         textAlign: "center",
+        zIndex: 1,
+        background: "url(./components/images/coffee_background_laptop.jpg)",
+        backgroundPosition: "center center",
+        backgroundAttachment: "fixed",
+        overflow: "hidden"
     }
 
 }))
@@ -50,10 +55,10 @@ const Header = () => {
             <Typography className={classes.subtitle} variant="h5">
                 <Typewriter
                     options={{
-                        strings: ["React Enthusiast", "Software Developer", "Web Developer"],
+                        strings: ["React Enthusiast", "Software Developer", "Web Developer", "Coffee Lover"],
                         autoStart: true,
                         loop: true,
-                        deleteSpeed: 95,
+                        deleteSpeed: 80,
                     }}
                 />
             </Typography>

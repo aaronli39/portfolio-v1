@@ -1,3 +1,5 @@
 body {
-  background: url("./components/images/coffee-apple.jpg") no-repeat center center fixed;
+  background: url(./components/images/coffee_background_laptop.jpg);
+  background-position: center center;
+  background-attachment: fixed;
 }

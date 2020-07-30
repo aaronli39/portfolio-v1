@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { Box, AppBar, Toolbar, IconButton, Typography, Avatar, makeStyles, Divider, List, ListItem, ListItemIcon, ListItemText, Drawer } from "@material-ui/core"
 import { Home, AssignmentInd, Apps, ContactMail, MenuOpenRounded } from "@material-ui/icons"
 import avatar from "./images/avatar.png"
+import { Link } from "react-router-dom"
 
 // CSS Styles
 const useStyles = makeStyles(theme => ({
@@ -25,19 +26,23 @@ const useStyles = makeStyles(theme => ({
 const menuItems = [
     {
         listIcon: <Home />,
-        listText: "Home"
+        listText: "Home",
+        listPath: "/"
     },
     {
         listIcon: <AssignmentInd />,
-        listText: "Resume"
+        listText: "Resume",
+        listPath: "/resume"
     },
     {
         listIcon: <Apps />,
-        listText: "Portfolio"
+        listText: "Portfolio",
+        listPath: "/portfolio"
     },
     {
         listIcon: <ContactMail />,
-        listText: "Contacts"
+        listText: "Contact",
+        listPath: "/contact"
     }
 ]
 
@@ -53,8 +58,8 @@ const Navbar = () => {
             <Divider />
             <List disablePadding>
                 {menuItems.map((lsItem, ind) => (
-                    <ListItem button key={ind} onClick={() => setState(false)}>
-                        <ListItemIcon className={classes.listItem}>
+                    <ListItem button key={ind} component={Link} to={lsItem.listPath} >
+                        <ListItemIcon className={classes.listItem} onClick={() => setState(false)}>
                             {lsItem.listIcon}
                         </ListItemIcon>
                         <ListItemText className={classes.listItem} primary={lsItem.listText} />
@@ -67,7 +72,7 @@ const Navbar = () => {
 
     return (
         <React.Fragment>
-            <Box component="nav">
+            <Box component="nav" style={{display:"block"}}>
                 <AppBar position="static" style={{ background: "#222" }}>
                     <Toolbar disableGutters>
                         <Box ml={2} component="div" style={{ flex: 1 }}>
