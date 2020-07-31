@@ -25,10 +25,10 @@ const useStyles = makeStyles(theme => ({
         width: "100vw",
         textAlign: "center",
         zIndex: 1,
-        background: "url(./components/images/coffee_background_laptop.jpg)",
-        backgroundPosition: "center center",
-        backgroundAttachment: "fixed",
-        overflow: "hidden"
+    },
+    wrapper: {
+        overflow: "hidden",
+        height: "300px"
     }
 
 }))
@@ -37,31 +37,33 @@ const Header = () => {
     const classes = useStyles()
 
     return (
-        <Box className={classes.typedContainer}>
-            <Grid container justify="center">
-                <Avatar src={avatar} className={classes.avatar} alt="Xiaojie Li" />
-            </Grid>
-            <Typography className={classes.title} variant="h4">
-                <Typewriter
-                    onInit={(typewriter) => {
-                        typewriter.typeString("Xiaojie Li")
-                            .callFunction(() => {
-                                console.log("String typed out!");
-                            })
-                            .start();
-                    }}
-                />
-            </Typography>
-            <Typography className={classes.subtitle} variant="h5">
-                <Typewriter
-                    options={{
-                        strings: ["React Enthusiast", "Software Developer", "Web Developer", "Coffee Lover"],
-                        autoStart: true,
-                        loop: true,
-                        deleteSpeed: 80,
-                    }}
-                />
-            </Typography>
+        <Box className={classes.wrapper}>
+            <Box className={classes.typedContainer}>
+                <Grid container justify="center">
+                    <Avatar src={avatar} className={classes.avatar} alt="Xiaojie Li" />
+                </Grid>
+                <Typography className={classes.title} variant="h4">
+                    <Typewriter
+                        onInit={(typewriter) => {
+                            typewriter.typeString("Xiaojie Li")
+                                .callFunction(() => {
+                                    console.log("String typed out!");
+                                })
+                                .start();
+                        }}
+                    />
+                </Typography>
+                <Typography className={classes.subtitle} variant="h5">
+                    <Typewriter
+                        options={{
+                            strings: ["React Enthusiast", "Software Developer", "Web Developer", "Coffee Lover"],
+                            autoStart: true,
+                            loop: true,
+                            deleteSpeed: 80,
+                        }}
+                    />
+                </Typography>
+            </Box>
         </Box>
     )
 }

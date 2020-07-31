@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import { TextField, Typography, Button, Grid, Box } from "@material-ui/core";
+import { Link } from '@material-ui/core';
 import SendIcon from "@material-ui/icons/Send";
 import Navbar from "./Navbar";
 
@@ -15,30 +16,27 @@ const useStyles = makeStyles((theme) => ({
 		marginTop: "1rem",
 		color: "tomato",
 		borderColor: "tomato",
+		"&:hover": {
+			color: "#a64a1c"
+		}
 	},
+	github: {
+		marginTop: "1rem",
+		color: "white",
+		borderColor: "black",
+		"&:hover": {
+			color: "#d1d9e6"
+		}
+	},
+	linkedin: {
+		marginTop: "1rem",
+		color: "#1a8edb",
+		borderColor: "white",
+		"&:hover": {
+			color: "#186aa1"
+		}
+	}
 }));
-
-const InputField = withStyles({
-	root: {
-		"& label.Mui-focused": {
-			color: "tomato",
-		},
-		"& label": {
-			color: "tan",
-		},
-		"& .MuiOutlinedInput-root": {
-			"& fieldset": {
-				borderColor: "tan",
-			},
-			"&:hover fieldset": {
-				borderColor: "tan",
-			},
-			"&.Mui-focused fieldset": {
-				borderColor: "tan",
-			},
-		},
-	},
-})(TextField);
 
 const Contacts = () => {
 	const classes = useStyles();
@@ -53,37 +51,42 @@ const Contacts = () => {
 						style={{
 							color: "tomato",
 							textAlign: "center",
-							textTransform: "uppercase",
 						}}
 					>
-						Say hello!
+						SAY HELLO!
        			   </Typography>
-					<InputField
-						fullWidth={true}
-						label="Name"
+					<Button
+						className={classes.github}
 						variant="outlined"
-						inputProps={{ style: { color: "white" } }}
-						margin="dense"
-						size="medium"
-					/>
+						fullWidth={true}
+						endIcon={<SendIcon />}
+						href="https://github.com/aaronli39"
+					>
+						Github
+          </Button>
+
 					<br />
 
-					<InputField
-						fullWidth={true}
-						label="Email"
+					<Button
+						className={classes.linkedin}
 						variant="outlined"
-						inputProps={{ style: { color: "white" } }}
-						margin="dense"
-						size="medium"
-					/>
+						fullWidth={true}
+						endIcon={<SendIcon />}
+						href="https://www.linkedin.com/in/xiaojie-aaron-li-89551315a/"
+					>
+						LinkedIn
+          </Button>
+
 					<br />
+
 					<Button
 						className={classes.button}
 						variant="outlined"
 						fullWidth={true}
 						endIcon={<SendIcon />}
+						href="mailto:aaronli39@gmail.com"
 					>
-						contact me
+						Email me
           </Button>
 				</Box>
 			</Grid>
