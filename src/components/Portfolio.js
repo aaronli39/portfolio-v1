@@ -96,7 +96,7 @@ const Portfolio = () => {
 							<Button size="small" color="primary" href="https://github.com/aaronli39/portfolio-v1" target="_blank">
 								Source
               				</Button>
-							<Button size="small" color="primary">
+							<Button size="small" color="primary" href="aaronli39.herokuapp.com" target="_blank">
 								Live Demo
               				</Button>
 						</CardActions>
