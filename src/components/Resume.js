@@ -94,6 +94,29 @@ const useStyles = makeStyles(theme => ({
         padding: "3rem 0",
         textTransform: "uppercase"
     },
+    month: {
+        textAlign: "center",
+        maxWidth: "8.5rem",
+        margin: "1.5rem 3rem 0 auto",
+        fontSize: "1.2rem",
+        background: "tomato",
+        color: "white",
+        lineHeight: 0.8,
+        padding: "0.5rem 0 0.5rem",
+        "&:before": {
+            display: "none"
+        },
+        [theme.breakpoints.up("md")]: {
+            margin: "1.5rem auto 0.5rem auto",
+            "&:nth-of-type(2n)": {
+                float: "none",
+                margin: "0 auto",
+            },
+            "&:nth-of-type(2n):before": {
+                display: "none"
+            }
+        }
+    },
     subHeading: {
         color: "white",
         padding: "0",
@@ -110,10 +133,13 @@ const Resume = () => {
             <Navbar />
 
             <Box component="header" className={classes.mainContainer}>
+
+                {/* 2020 stuff */}
                 <Typography variant="h4" className={classes.heading} align="center">
                     Working Experience
                 </Typography>
 
+                {/* 2020 jobs */}
                 <Box component="div" className={classes.timeLine}>
                     <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
                         2020
@@ -130,9 +156,16 @@ const Resume = () => {
                             HTML/CSS/Javascript/Python (Flask)/MongoDB while managing program and class logistics
                     </Typography>
                     </Box>
+                    {/* end of 2020 stuff */}
 
+                    {/* 2019 stuff  */}
                     <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
                         2019
+                    </Typography>
+
+                    {/* 2019 jobs */}
+                    <Typography variant="h2" className={`${classes.month} ${classes.timeLineItem}`}>
+                        September
                     </Typography>
                     <Box component="div" className={classes.timeLineItem}>
                         <Typography variant="h5" className={classes.subHeading}>
@@ -146,8 +179,8 @@ const Resume = () => {
                     </Typography>
                     </Box>
 
-                    <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
-                        2019
+                    <Typography variant="h2" className={`${classes.month} ${classes.timeLineItem}`}>
+                        July
                     </Typography>
                     <Box component="div" className={classes.timeLineItem}>
                         <Typography variant="h5" className={classes.subHeading}>
@@ -156,7 +189,7 @@ const Resume = () => {
                         <Typography variant="body1" style={{ color: "tomato" }}>
                             Upperline Code
                     </Typography>
-                        <Typography variant="subtitle1" style={{ color: "tan", marginBottom: "3px"}}>
+                        <Typography variant="subtitle1" style={{ color: "tan", marginBottom: "3px" }}>
                             ● Participated in a three week selective pilot program from a collaboration between Upperline Code
                             and JP. Morgan Chase that aimed to cultivate computer science talent with a focus in fintech
                     </Typography>
@@ -168,6 +201,7 @@ const Resume = () => {
                             Heroku. Users can login, create and manage schools data, and managing student data
                     </Typography>
                     </Box>
+                    {/* end of 2019 stuff */}
 
                 </Box>
             </Box>

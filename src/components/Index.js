@@ -11,10 +11,9 @@ const useStyles = makeStyles(theme => ({
         position: "absolute",
         opacity: "0.7",
         height: "calc(100vh - 64px) !important",
-        top: "64px !important",
+        // top: " !important",
         [theme.breakpoints.down("sm")]: {
             height: "calc(100vh - 56px) !important",
-            top: "0px !important"
         }
     }
 }))
