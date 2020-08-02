@@ -76,7 +76,7 @@ const Navbar = () => {
                 <AppBar position="static" style={{ background: "#222" }}>
                     <Toolbar disableGutters>
                         <Box ml={2} component="div" style={{ flex: 1 }}>
-                            <Typography variant="h5" style={{ color: "tan" }} >Aaron Li</Typography>
+                            <Typography variant="h5" style={{ color: "tan" }} >Xiaojie (Aaron) Li</Typography>
                         </Box>
                         <Drawer anchor="right" open={state} onClose={() => setState(false)}>
                             {sideList()}

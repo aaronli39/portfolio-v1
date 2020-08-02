@@ -14,8 +14,7 @@ import {
 import Navbar from "./Navbar";
 import project1 from "../components/images/html_css_flask.png";
 import project2 from "../components/images/react_material.png";
-import project3 from "../components/images/react-redux.jpg";
-import project4 from "../components/images/mern-stack.jpg";
+import project3 from "../components/images/html_css_bootstrap.png";
 
 const useStyles = makeStyles({
 	mainContainer: {
@@ -24,7 +23,7 @@ const useStyles = makeStyles({
 	},
 	cardContainer: {
 		maxWidth: 345,
-		margin: "5rem auto",
+		margin: "2rem auto",
 	},
 });
 
@@ -102,6 +101,74 @@ const Portfolio = () => {
 						</CardActions>
 					</Card>
 				</Grid>
+
+				{/* Project 3 */}
+				<Grid item xs={12} sm={8} md={6}>
+					<Card className={classes.cardContainer}>
+						<CardActionArea>
+							<CardMedia
+								component="img"
+								alt="Project 1"
+								height="140"
+								image={project3}
+							/>
+							<CardContent>
+								<Typography gutterBottom variant="h5">
+									Campaign Website
+                </Typography>
+								<Typography variant="body2" color="textSecondary" component="p">
+									Using Bootstrap, SCSS, and Javascript, I created a responsive, mobile-first website for a student
+									presidential election campaign. 
+                </Typography>
+							</CardContent>
+						</CardActionArea>
+						<CardActions>
+							<Button size="small" color="primary" href="https://github.com/aaronli39/campaign" target="_blank">
+								Source
+              </Button>
+							<Button size="small" color="primary" href="http://xiaojieli.me/campaign/" target="_blank">
+								Live Demo
+              </Button>
+						</CardActions>
+					</Card>
+				</Grid>
+
+				{/* Placeholder */}
+				<Grid item xs={12} sm={8} md={6}>
+					<Card className={classes.cardContainer} style={{visibility: "hidden"}}>
+						<CardActionArea>
+							<CardMedia
+								component="img"
+								alt="Project 1"
+								height="140"
+								image={project1}
+							/>
+							<CardContent>
+								<Typography gutterBottom variant="h5">
+									Classify
+                </Typography>
+								<Typography variant="body2" color="textSecondary" component="p">
+									Classify is an educational platform meant to make classes, students, assignments, and grades easier
+									to manage. Students have a platform similar to Google Classroom, except they can see their grades and upcoming
+									assignments or tests as well. Teachers can make class posts, assign homework and due dates, as well as grade their students
+									all on the same platform. On top of that, users can create admin accounts that serve as administrators of a school,
+									being able to do things like creating unique classes, add student rosters from a CSV, and doing everything else
+									a student and teacher can do. Together, these three levels of users: school admins, teachers, and students are served
+									by a central platform for the best educational experience.
+                </Typography>
+							</CardContent>
+						</CardActionArea>
+						<CardActions>
+							<Button size="small" color="primary" href="https://github.com/aaronli39/managing_manatees.git" target="_blank">
+								Source
+              </Button>
+							<Button size="small" color="primary" href="https://ftf-final-project-goldman.herokuapp.com/" target="_blank">
+								Live Demo
+              </Button>
+						</CardActions>
+					</Card>
+				</Grid>
+
 			</Grid>
 		</Box>
 	);
