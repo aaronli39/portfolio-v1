@@ -50,7 +50,7 @@ const Header = () => {
             <Typography className={classes.subtitle} variant="h5">
                 <Typewriter
                     options={{
-                        strings: ["React Enthusiast", "Software Developer", "Web Developer", "Coffee Lover"],
+                        strings: ["Software Engineer", "Javascript Enthusiast", "Web Developer", "Coffee Lover", ],
                         autoStart: true,
                         loop: true,
                         deleteSpeed: 80,
