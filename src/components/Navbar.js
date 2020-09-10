@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Box, AppBar, Toolbar, IconButton, Typography, Avatar, makeStyles, Divider, List, ListItem, ListItemIcon, ListItemText, Drawer } from "@material-ui/core"
-import { Home, AssignmentInd, Apps, ContactMail, MenuOpenRounded } from "@material-ui/icons"
+import { Home, AssignmentInd, Apps, ContactMail, Menu } from "@material-ui/icons"
 import avatar from "./images/avatar.png"
 import { Link } from "react-router-dom"
 
@@ -72,18 +72,29 @@ const Navbar = () => {
 
     return (
         <React.Fragment>
-            <Box component="nav" style={{display:"block"}}>
+            <Box component="nav" style={{ display: "block" }}>
                 <AppBar position="static" style={{ background: "#222" }}>
                     <Toolbar disableGutters>
                         <Box ml={2} component="div" style={{ flex: 1 }}>
-                            <Typography variant="h5" style={{ color: "tan" }} >Xiaojie (Aaron) Li</Typography>
+                            {/* <Link to="/" underline="none" > */}
+                            <Link to="/" style={{ textDecoration: "none" }}>
+                                <IconButton disablePadding disableGutters>
+                                    <Typography variant="h5" style={{ color: "tan", textDecoration: "none" }} >Xiaojie (Aaron) Li</Typography>
+                                </IconButton>
+                            </Link>
+                            {/* </Link> */}
                         </Box>
                         <Drawer anchor="right" open={state} onClose={() => setState(false)}>
                             {sideList()}
                         </Drawer>
 
-                        <IconButton onClick={() => setState(true)} >
-                            <MenuOpenRounded style={{ color: "tomato" }} />
+                        <IconButton size="small" onClick={() => setState(true)} >
+                            <ListItem justify disableGutters>
+                                <ListItemText primary="Menu" style={{ paddingRight: "6px", color: "tomato", margin: 0 }} />
+                                <ListItemIcon>
+                                    <Menu style={{ color: "tomato" }} />
+                                </ListItemIcon>
+                            </ListItem>
                         </IconButton>
                     </Toolbar>
                 </AppBar>
