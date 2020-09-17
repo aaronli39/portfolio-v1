@@ -131,9 +131,9 @@ const Portfolio = () => {
 							<Button
 								size="small"
 								color="primary"
-								className={classes.inProgress}
-								onClick={(e) => e.preventDefault}
-								href=""
+								// className={classes.inProgress}
+								// onClick={(e) => e.preventDefault}
+								href="https://zipshop-fbf07.web.app/"
 								target="_blank"
 							>
 								In Progress
