@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import { TextField, Typography, Button, Grid, Box } from "@material-ui/core";
-import { Link } from '@material-ui/core';
+import { Link } from "@material-ui/core";
 import SendIcon from "@material-ui/icons/Send";
 import Navbar from "./Navbar";
 
@@ -17,25 +17,25 @@ const useStyles = makeStyles((theme) => ({
 		color: "tomato",
 		borderColor: "tomato",
 		"&:hover": {
-			color: "#a64a1c"
-		}
+			color: "#a64a1c",
+		},
 	},
 	github: {
 		marginTop: "1rem",
 		color: "white",
 		borderColor: "black",
 		"&:hover": {
-			color: "#d1d9e6"
-		}
+			color: "#d1d9e6",
+		},
 	},
 	linkedin: {
 		marginTop: "1rem",
 		color: "#1a8edb",
 		borderColor: "white",
 		"&:hover": {
-			color: "#186aa1"
-		}
-	}
+			color: "#186aa1",
+		},
+	},
 }));
 
 const Contacts = () => {
@@ -54,7 +54,7 @@ const Contacts = () => {
 						}}
 					>
 						SAY HELLO!
-       			   </Typography>
+					</Typography>
 					<Button
 						className={classes.github}
 						variant="outlined"
@@ -63,7 +63,7 @@ const Contacts = () => {
 						href="https://github.com/aaronli39"
 					>
 						Github
-          </Button>
+					</Button>
 
 					<br />
 
@@ -72,10 +72,10 @@ const Contacts = () => {
 						variant="outlined"
 						fullWidth={true}
 						endIcon={<SendIcon />}
-						href="https://www.linkedin.com/in/xiaojie-aaron-li-89551315a/"
+						href="https://www.linkedin.com/in/aaronli39/"
 					>
 						LinkedIn
-          </Button>
+					</Button>
 
 					<br />
 
@@ -87,7 +87,7 @@ const Contacts = () => {
 						href="mailto:aaronli39@gmail.com"
 					>
 						Email me
-          </Button>
+					</Button>
 				</Box>
 			</Grid>
 		</Box>
