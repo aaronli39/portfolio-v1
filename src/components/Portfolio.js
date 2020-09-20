@@ -111,11 +111,14 @@ const Portfolio = () => {
 									Zipshop
 								</Typography>
 								<Typography variant="body2" color="textSecondary" component="p">
-									Zipshop is an ecommerce site with functionality just like that
-									of Amazon.com. Users can view items, add them to cart, and pay
-									for items with Stripe API integrated. Redux is used for
-									advanced state management, and the database is managed with
-									Google's Firebase to store saved items.
+									Zipshop is self-learning example e-commerce site themed
+									similar to Amazon.com with a few static products. However,
+									Zipshop has features that a regular e-commerce site would
+									have: storing items to cart, saving cart to database, payment
+									and checkout, dynamic rendering of subtotal and cart removal,
+									and more. The site was created to teach myself React, React
+									hooks, React Context API, Firebase Auth, Firestore, Cloud
+									Functions, and connecting to APIs such as Stripe for payment.
 								</Typography>
 							</CardContent>
 						</CardActionArea>
@@ -131,12 +134,10 @@ const Portfolio = () => {
 							<Button
 								size="small"
 								color="primary"
-								// className={classes.inProgress}
-								// onClick={(e) => e.preventDefault}
 								href="https://zipshop-fbf07.web.app/"
 								target="_blank"
 							>
-								In Progress
+								Live Demo
 							</Button>
 						</CardActions>
 					</Card>
