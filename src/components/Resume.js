@@ -146,6 +146,54 @@ const Resume = () => {
 						2020
 					</Typography>
 
+					{/* hack 4 impact */}
+					<Typography
+						variant="h2"
+						className={`${classes.month} ${classes.timeLineItem}`}
+					>
+						Sept
+					</Typography>
+					<Box component="div" className={classes.timeLineItem}>
+						<Typography variant="h5" className={classes.subHeading}>
+							Software Engineer
+						</Typography>
+						<Typography variant="body1" style={{ color: "tomato" }}>
+							Hack4Impact{" "}
+							<Typography
+								variant="span"
+								style={{
+									color: "tomato",
+									fontSize: "12px",
+									fontStyle: "italic",
+								}}
+							>
+								(Current job)
+							</Typography>
+						</Typography>
+						<Typography
+							variant="subtitle1"
+							style={{ color: "tan", marginBottom: "3px" }}
+						>
+							● Participating at a local chapter of Hack4Impact that aims to
+							develop apps for nonprofits
+						</Typography>
+						<Typography
+							variant="subtitle1"
+							style={{ color: "tan", marginBottom: "3px" }}
+						>
+							● Collaborating on small teams to write deployable code for web
+							and mobile applications
+						</Typography>
+						<Typography
+							variant="subtitle1"
+							style={{ color: "tan", marginBottom: "3px" }}
+						>
+							● Utilize appropriate technologies and design a fully functional
+							app from a prototype
+						</Typography>
+					</Box>
+
+					{/* teaching assistant job upperline */}
 					<Typography
 						variant="h2"
 						className={`${classes.month} ${classes.timeLineItem}`}
@@ -192,6 +240,7 @@ const Resume = () => {
 							to make sure students are comfortable and learning
 						</Typography>
 					</Box>
+
 					{/* end of 2020 stuff */}
 
 					{/* 2019 stuff  */}
