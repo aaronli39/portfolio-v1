@@ -1,0 +1,98 @@
+{
+  "main": {
+    "name": "Xiaojie Li",
+    "occupation": "Software Engineer",
+    "description": "I have a passion to create meaningful applications that benefit the people around me",
+    "image": "headshot.png",
+    "bio": "Hello! I am a sophomore studying computer science at Boston University. I enjoy creating fullstack applications utilizing technologies such as React, Exprress, Firebase, MongoDB, and more. I'm constantly looking for new opportunities to learn and grow as a developer.",
+    "contactmessage": "Get in touch with me!",
+    "email": "aaronli3@bu.edu",
+    "phone": "+1 631-568-1379",
+    "address": {
+      "street": "1710 East 8th Street",
+      "city": "Brooklyn",
+      "state": "NY",
+      "zip": "11223"
+    },
+    "website": "http://xiaojieli.netlify.app",
+    "resumedownload": "resume.pdf",
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/aaronli39/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "github",
+        "url": "http://github.com/aaronli39",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "My education and relevant technical experience",
+    "education": [
+      {
+        "school": "Boston University",
+        "degree": "Bachelor of Arts",
+        "graduated": "expected May 2023",
+        "description": ""
+      }
+    ],
+    "work": [
+      {
+        "company": "Hack4Impact",
+        "title": "Student Software Engineer",
+        "years": "September 2020 - Present",
+        "description": "Student software engineer at a university chapter of Hack4Impact: a company that connects students with nonprofits to develop their technical solutions. I'm utilizing technologies such as Github, React, NextJS, Express, and more to create web and mobile applications for our clients."
+      },
+      {
+        "company": "Upperline Code",
+        "title": "Teacher Assistant",
+        "years": "July 2020 - August 2020",
+        "description": "Co-instructed a cohort of sixteen high school students with full stack web development. The curriculum consisted of HTML, CSS, Bootstrap, Python, and the Flask micro web-framework. Provided technical support to students on their projects by teaching them about API, how to create website cookies, and how to use Flask with MongoDB."
+      },
+      {
+        "company": "Boston University",
+        "title": "Computer Assistant/IT Technician",
+        "years": "September 2019 - December 2019",
+        "description": "Provided technical troubleshooting to Boston University students, faculty, and affiliates. Assisted in virus removal, hardware repairs, and setting up new computers."
+      },
+      {
+        "company": "J.P. Morgan Chase",
+        "title": "Fintech Focus Fellow",
+        "years": "July 2019 - August 2019",
+        "description": "I was a pilot class participant from a program sponsored by a consortium of top-tier financial institutions (Bank of America, Goldman Sachs, JPMorgan Chase, Morgan Stanley, and Wells Fargo) to gain a foundational understanding of the FinTech sector and computer science. I learned full-stack web development and collaborated to create a culminating final project that made use of the technologies we learned."
+      }
+    ],
+    "skills": []
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Wisdom: Educational Platform",
+        "category": "Web app that combines Google Classroom with a calendar and grading system",
+        "image": "wisdom.png",
+        "url": "https://ftf-final-project-goldman.herokuapp.com/"
+      },
+      {
+        "title": "Zipshop",
+        "category": "Basic e-commerce site with Stripe API integration",
+        "image": "zipshop.png",
+        "url": "https://zipshop-fbf07.web.app/"
+      },
+      {
+        "title": "Pretend Campaign Platform",
+        "category": "a website to promote a pretend student presidential candidate",
+        "image": "campaign.png",
+        "url": "https://aaronli39.github.io/campaign/"
+      },
+      {
+        "title": "Bash Shell",
+        "category": "a custom bash shell written in C",
+        "image": "shell.png",
+        "url": "https://github.com/aaronli39/MKS65C-shell"
+      }
+    ]
+  }
+}

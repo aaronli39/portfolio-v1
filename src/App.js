@@ -1,22 +1,51 @@
-import React from 'react'
-import Index from './components/Index'
-import Resume from "./components/Resume"
-import Portfolio from "./components/Portfolio"
-import Contact from "./components/Contact"
-import { CssBaseline } from '@material-ui/core'
-import "./index.css"
-import { Route } from 'react-router-dom'
+import React, { Component } from "react";
+import $ from "jquery";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import About from "./Components/About";
+import Resume from "./Components/Resume";
+import Contact from "./Components/Contact";
+import Portfolio from "./Components/Portfolio";
 
-const App = () => {
-	return (
-		<React.Fragment>
-			<CssBaseline />
-			<Route exact path="/" component={Index}></Route>
-			<Route path="/resume" component={Resume}></Route>
-			<Route path="/portfolio" component={Portfolio}></Route>
-			<Route path="/contact" component={Contact}></Route>
-		</React.Fragment>
-	)
+class App extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			resumeData: {},
+		};
+	}
+
+	getResumeData() {
+		$.ajax({
+			url: "/resumeData.json",
+			dataType: "json",
+			cache: false,
+			success: function (data) {
+				this.setState({ resumeData: data });
+			}.bind(this),
+			error: function (xhr, status, err) {
+				console.log(err);
+				alert(err);
+			},
+		});
+	}
+
+	componentDidMount() {
+		this.getResumeData();
+	}
+
+	render() {
+		return (
+			<div className="App">
+				<Header data={this.state.resumeData.main} />
+				<About data={this.state.resumeData.main} />
+				<Resume data={this.state.resumeData.resume} />
+				<Portfolio data={this.state.resumeData.portfolio} />
+				<Contact data={this.state.resumeData.main} />
+				<Footer data={this.state.resumeData.main} />
+			</div>
+		);
+	}
 }
 
-export default App
+export default App;
