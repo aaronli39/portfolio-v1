@@ -70,8 +70,8 @@
   "portfolio": {
     "projects": [
       {
-        "title": "Wisdom: Educational Platform",
-        "category": "Web app that combines Google Classroom with a calendar and grading system",
+        "title": "Wisdom: Education Platform",
+        "category": "Web app with features of Google Classroom, calendar, and more",
         "image": "wisdom.png",
         "url": "https://ftf-final-project-goldman.herokuapp.com/"
       },
