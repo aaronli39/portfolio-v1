@@ -77,21 +77,21 @@
       },
       {
         "title": "Zipshop",
-        "category": "Basic e-commerce site with Stripe API integration",
+        "category": "Basic e-commerce site built with React and Stripe API integration",
         "image": "zipshop.png",
         "url": "https://zipshop-fbf07.web.app/"
       },
       {
-        "title": "Pretend Campaign Platform",
-        "category": "a website to promote a pretend student presidential candidate",
-        "image": "campaign.png",
-        "url": "https://aaronli39.github.io/campaign/"
+        "title": "Sudoku Solver",
+        "category": "various backtracking algorithms to solve sudoku puzzles",
+        "image": "sudoku.png",
+        "url": "https://github.com/aaronli39/sudoku-solver"
       },
       {
         "title": "Bash Shell",
         "category": "a custom bash shell written in C",
         "image": "shell.png",
-        "url": "https://github.com/aaronli39/MKS65C-shell"
+        "url": "https://github.com/aaronli39/c-shell"
       }
     ]
   }
