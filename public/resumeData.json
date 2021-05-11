@@ -4,15 +4,15 @@
     "occupation": "Software Engineer",
     "description": "I have a passion to create meaningful applications that benefit the people around me",
     "image": "headshot.png",
-    "bio": "Hello! I am a sophomore studying computer science at Boston University. I enjoy creating fullstack applications utilizing technologies such as React, Exprress, Firebase, MongoDB, and more. I'm constantly looking for new opportunities to learn and grow as a developer.",
+    "bio": "Hello! I am a rising junior studying computer science at Boston University. I enjoy creating any form of application that serves a useful purpose. So far, I have experience creating fullstack applications utilizing technologies such as React, Express, Firebase, MongoDB, and more. However, I am constantly looking for new opportunities and technologies to learn and grow as a developer.",
     "contactmessage": "Get in touch with me!",
     "email": "aaronli3@bu.edu",
     "phone": "+1 631-568-1379",
     "address": {
-      "street": "1710 East 8th Street",
-      "city": "Brooklyn",
-      "state": "NY",
-      "zip": "11223"
+      "street": "",
+      "city": "",
+      "state": "",
+      "zip": ""
     },
     "website": "http://xiaojieli.netlify.app",
     "resumedownload": "resume.pdf",
