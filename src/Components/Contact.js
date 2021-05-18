@@ -102,7 +102,7 @@ const Contact = ({ data }) => {
 						</fieldset>
 					</form>
 
-					<div id="message-warning"> Error boy</div>
+					<div id="message-warning">Error!</div>
 					<div id="message-success">
 						<i className="fa fa-check"></i>Your message was sent, thank you!
 						<br />
@@ -115,10 +115,9 @@ const Contact = ({ data }) => {
 						<p className="address">
 							{data?.name}
 							<br />
-							{data?.address.street} <br />
-							{data?.address.city}, {data?.address.state} {data?.address.zip}
-							<br />
 							<span>{data?.phone}</span>
+							<br />
+							{"aaronli3@bu.edu"}
 						</p>
 					</div>
 

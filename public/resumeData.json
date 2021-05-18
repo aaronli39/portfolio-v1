@@ -42,7 +42,7 @@
     "work": [
       {
         "company": "Hack4Impact",
-        "title": "Student Software Engineer",
+        "title": "Team Lead",
         "years": "September 2020 - Present",
         "description": "Student software engineer at a university chapter of Hack4Impact: a company that connects students with nonprofits to develop their technical solutions. I'm utilizing technologies such as Github, React, NextJS, Express, and more to create web and mobile applications for our clients."
       },
@@ -74,6 +74,12 @@
         "category": "Web app with features of Google Classroom, calendar, and more",
         "image": "wisdom.png",
         "url": "https://ftf-final-project-goldman.herokuapp.com/"
+      },
+      {
+        "title": "Eatwell: Food Education Platform",
+        "category": "A food non-profit app that contains various recipes, videos, and instructions to make food",
+        "image": "eatwell.png",
+        "url": "https://eatwell-87d0c.web.app/"
       },
       {
         "title": "Zipshop",

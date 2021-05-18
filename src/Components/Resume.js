@@ -11,8 +11,8 @@ class Resume extends Component {
 						<p className="info">
 							{education.degree} <em className="date">{education.graduated}</em>
 						</p>
-						<p style={{ marginBottom: "0" }}>● 3.3/4.0 GPA</p>
-						<p style={{ marginBottom: "0" }}>● Dean's List 2020</p>
+						<p style={{ marginBottom: "0" }}>● 3.4 / 4.0 GPA</p>
+						<p style={{ marginBottom: "0" }}>● Dean's List Spring 2020 - Present</p>
 						<p style={{ marginBottom: "0" }}>● Computer Science major</p>
 					</div>
 				);
