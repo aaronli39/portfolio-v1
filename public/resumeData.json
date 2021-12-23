@@ -4,7 +4,7 @@
     "occupation": "Software Engineer",
     "description": "I have a passion to create meaningful applications that benefit the people around me",
     "image": "headshot.png",
-    "bio": "Hello! I am a rising junior studying computer science at Boston University. I enjoy creating any form of application that serves a useful purpose. So far, I have experience creating fullstack applications utilizing technologies such as React, Express, Firebase, MongoDB, and more. However, I am constantly looking for new opportunities and technologies to learn and grow as a developer.",
+    "bio": "Hello! I am a rising senior studying computer science at Boston University. I enjoy creating any form of application that serves a useful purpose. So far, I have experience creating fullstack applications utilizing technologies such as React, Express, Firebase, MongoDB, and more. However, I am constantly looking for new opportunities and technologies to learn and grow as a developer.",
     "contactmessage": "Get in touch with me!",
     "email": "aaronli3@bu.edu",
     "phone": "+1 631-568-1379",
@@ -44,7 +44,13 @@
         "company": "Hack4Impact",
         "title": "Team Lead",
         "years": "September 2020 - Present",
-        "description": "Student software engineer at a university chapter of Hack4Impact: a company that connects students with nonprofits to develop their technical solutions. I'm utilizing technologies such as Github, React, NextJS, Express, and more to create web and mobile applications for our clients."
+        "description": "Student SWE Lead at a university chapter of Hack4Impact: a company that connects students with nonprofits to develop their technical solutions. I'm utilizing technologies such as Github, React, NextJS, Express, and more to create web and mobile applications for our clients. I'm also managing a team of other students and directly working with clients to create the project they envision."
+      },
+      {
+        "company": "Amazon",
+        "title": "Software Development Engineer",
+        "years": "June 2021 - August 2021",
+        "description": "Created an internal facing app with a React frontend and AWS serverless backend. Improved deployment speeds and modularity of app by using Cloudformation templates. Created, handled, and exposed an API with API Gateway. Used Lambdas to authenticate, create, and fetch information from a DynamoDb backend."
       },
       {
         "company": "Upperline Code",
