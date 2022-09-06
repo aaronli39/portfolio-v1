@@ -4,7 +4,7 @@
     "occupation": "Software Engineer",
     "description": "I have a passion to create meaningful applications that benefit the people around me",
     "image": "headshot.png",
-    "bio": "Hello! I am a rising senior studying computer science at Boston University. I enjoy creating any form of application that serves a useful purpose. So far, I have experience creating fullstack applications utilizing technologies such as React, Express, Firebase, MongoDB, and more. However, I am constantly looking for new opportunities and technologies to learn and grow as a developer.",
+    "bio": "Hello! I am a senior studying computer science at Boston University. I enjoy creating any form of application that serves a useful purpose with a focus on improving productivity for the end-user. So far, I have experience creating fullstack applications utilizing technologies such as React, Express, Firebase, MongoDB, and more. However, I am constantly looking for new opportunities and technologies to learn and grow as a developer.",
     "contactmessage": "Get in touch with me!",
     "email": "aaronli3@bu.edu",
     "phone": "+1 631-568-1379",
@@ -41,9 +41,15 @@
     ],
     "work": [
       {
+        "company": "Google",
+        "title": "Software Engineer Intern",
+        "years": "May 2022 - August 2022",
+        "description": "Remodeled the UI for an internal facing site utilized by over 600 Android engineers to allow them to run OS builds and tests more efficiently. Improved team technical debt by 5% through migrating legacy code. Freed up frontend bugs backlog by 60% from solving multiple bugs."
+      },
+      {
         "company": "Hack4Impact",
         "title": "Team Lead",
-        "years": "September 2020 - Present",
+        "years": "September 2020 - Fall 2021",
         "description": "Student SWE Lead at a university chapter of Hack4Impact: a company that connects students with nonprofits to develop their technical solutions. I'm utilizing technologies such as Github, React, NextJS, Express, and more to create web and mobile applications for our clients. I'm also managing a team of other students and directly working with clients to create the project they envision."
       },
       {
@@ -57,18 +63,6 @@
         "title": "Teacher Assistant",
         "years": "July 2020 - August 2020",
         "description": "Co-instructed a cohort of sixteen high school students with full stack web development. The curriculum consisted of HTML, CSS, Bootstrap, Python, and the Flask micro web-framework. Provided technical support to students on their projects by teaching them about API, how to create website cookies, and how to use Flask with MongoDB."
-      },
-      {
-        "company": "Boston University",
-        "title": "Computer Assistant/IT Technician",
-        "years": "September 2019 - December 2019",
-        "description": "Provided technical troubleshooting to Boston University students, faculty, and affiliates. Assisted in virus removal, hardware repairs, and setting up new computers."
-      },
-      {
-        "company": "J.P. Morgan Chase",
-        "title": "Fintech Focus Fellow",
-        "years": "July 2019 - August 2019",
-        "description": "I was a pilot class participant from a program sponsored by a consortium of top-tier financial institutions (Bank of America, Goldman Sachs, JPMorgan Chase, Morgan Stanley, and Wells Fargo) to gain a foundational understanding of the FinTech sector and computer science. I learned full-stack web development and collaborated to create a culminating final project that made use of the technologies we learned."
       }
     ],
     "skills": []
